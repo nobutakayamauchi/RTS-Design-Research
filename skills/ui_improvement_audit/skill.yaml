@@ -1,0 +1,19 @@
+id: ui_improvement_audit
+name: UI Improvement Audit
+version: 0.1.0
+description: Compare an existing screen against references and produce prioritized, operational improvements.
+inputs:
+  - project
+  - screen
+  - current_ui_snapshot
+  - target_outcomes
+  - reference_queries
+outputs:
+  - audit_report_md
+  - prioritized_recommendations_md
+  - rts_design_decision_block_yaml
+required_packs:
+  - lazyweb
+records_to_rts: true
+failure_modes: skills/ui_improvement_audit/failure_modes.md
+status: draft

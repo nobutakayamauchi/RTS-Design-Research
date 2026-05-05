@@ -1,0 +1,45 @@
+id: "decision-rts-dashboard-001"
+type: design_decision
+project: "RTS"
+screen: "audit_console_dashboard"
+created_at: "2026-05-05T00:00:00Z"
+context: "Operators need to review decisions, transitions, and evidence quickly without losing reconstructability context."
+research:
+  sources:
+    - source_id: "src_dash_001"
+      source_type: "product-page"
+      provider: "lazyweb"
+      query: "developer audit console timeline inspector patterns"
+      retrieved_at: "2026-05-05T00:00:00Z"
+      reference_url: "https://example.invalid/reference-1"
+      screenshot_path: "docs/examples/placeholders/dashboard-ref-1.png"
+      license_or_usage_note: "placeholder metadata only; no third-party asset committed"
+      confidence: "medium"
+      notes: "Timeline + side inspector pattern supports fast triage with stable detail context."
+findings:
+  observed_patterns:
+    - "Three-pane layouts improve navigation, timeline scanability, and detail inspection flow."
+    - "Commit-linked evidence improves trust in operational decision records."
+  anti_patterns:
+    - "Decorative hero styling in operational consoles reduces signal density."
+decision:
+  selected_pattern: "Left navigation + central ledger timeline + right inspector"
+  rationale: "Balances breadth and detail while preserving traceability from event to evidence."
+constraints:
+  - "Keep sober developer-tool visual style."
+  - "Do not depend on runtime orchestration logic in this repository."
+assumptions:
+  - "Primary users are engineering operators and reviewers."
+  - "Most sessions begin from a known project context."
+action:
+  outputs:
+    - report.md
+    - ui-spec.md
+    - implementation-brief.md
+    - rts-design-decision-block.yaml
+outcome:
+  status: proposed
+  expected:
+    - "Faster decision triage with lower context switching."
+    - "Clearer audit trail from decision to supporting evidence."
+  observed: []

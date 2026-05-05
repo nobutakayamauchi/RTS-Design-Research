@@ -1,0 +1,19 @@
+id: screenshot_to_redesign_plan
+name: Screenshot to Redesign Plan
+version: 0.1.0
+description: Use a screenshot and target direction to produce an implementable redesign plan and UI spec.
+inputs:
+  - project
+  - screen
+  - screenshot
+  - target_direction
+  - constraints
+outputs:
+  - redesign_plan_md
+  - ui_spec_md
+  - rts_design_decision_block_yaml
+required_packs:
+  - lazyweb
+records_to_rts: true
+failure_modes: skills/screenshot_to_redesign_plan/failure_modes.md
+status: draft

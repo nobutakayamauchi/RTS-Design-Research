@@ -1,0 +1,20 @@
+id: design_research_to_ui_spec
+name: Design Research to UI Spec
+version: 0.1.0
+description: Use reference research to produce reconstructable UI artifacts and an RTS design decision block.
+inputs:
+  - project
+  - screen
+  - research_goal
+  - reference_queries
+  - constraints
+outputs:
+  - report_md
+  - ui_spec_md
+  - implementation_brief_md
+  - rts_design_decision_block_yaml
+required_packs:
+  - lazyweb
+records_to_rts: true
+failure_modes: skills/design_research_to_ui_spec/failure_modes.md
+status: draft
