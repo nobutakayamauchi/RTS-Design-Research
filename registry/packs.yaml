@@ -1,0 +1,5 @@
+packs:
+  - id: lazyweb
+    version: 0.1.0
+    status: draft
+    path: packs/lazyweb/pack.yaml

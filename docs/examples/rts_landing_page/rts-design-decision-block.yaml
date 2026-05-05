@@ -1,0 +1,47 @@
+id: decision-rts-landing-page-001
+type: design_decision
+project: RTS
+screen: landing_page
+created_at: "2026-05-05T00:00:00Z"
+context: >-
+  External users need a clear explanation of RTS as infrastructure for reconstructable decisions,
+  without marketing-heavy messaging.
+research:
+  sources:
+    - source_id: src_lp_001
+      source_type: "product-page"
+      provider: lazyweb
+      query: "infrastructure product page mechanism-first structure"
+      retrieved_at: "2026-05-05T00:00:00Z"
+      reference_url: "https://example.invalid/reference-landing-1"
+      screenshot_path: "docs/examples/placeholders/landing-ref-1.png"
+      license_or_usage_note: "placeholder metadata only; no third-party asset committed"
+      confidence: "medium"
+      notes: "Mechanism-first section ordering improves credibility for technical readers."
+findings:
+  observed_patterns:
+    - "Problem-first framing increases technical credibility."
+    - "Artifact examples reduce ambiguity about product claims."
+  anti_patterns:
+    - "Hype-heavy hero copy without mechanism evidence."
+decision:
+  selected_pattern: "Problem -> mechanism -> artifact -> ecosystem -> use cases -> getting started"
+  rationale: "Matches audit-oriented audiences and preserves traceability from claim to artifact."
+constraints:
+  - "No private screenshots or raw third-party assets."
+  - "All claims must map to reconstructable workflow elements."
+assumptions:
+  - "Primary audience includes engineering managers and technical leads."
+  - "Readers value workflow clarity over broad brand messaging."
+action:
+  outputs:
+    - report.md
+    - ui-spec.md
+    - implementation-brief.md
+    - rts-design-decision-block.yaml
+outcome:
+  status: proposed
+  expected:
+    - "Clearer understanding of RTS mechanism from first read."
+    - "Higher confidence in audit and provenance value."
+  observed: []

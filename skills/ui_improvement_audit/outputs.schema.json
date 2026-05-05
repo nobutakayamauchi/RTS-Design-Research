@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ui_improvement_audit outputs",
+  "type": "object",
+  "required": ["audit_report_md", "prioritized_recommendations_md", "rts_design_decision_block_yaml"],
+  "properties": {
+    "audit_report_md": { "type": "string" },
+    "prioritized_recommendations_md": { "type": "string" },
+    "rts_design_decision_block_yaml": { "type": "string" }
+  },
+  "additionalProperties": false
+}

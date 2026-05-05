@@ -1,0 +1,17 @@
+compatibility:
+  - skill_id: design_research_to_ui_spec
+    pack_id: lazyweb
+    status: draft
+    path: skills/design_research_to_ui_spec/skill.yaml
+  - skill_id: ui_improvement_audit
+    pack_id: lazyweb
+    status: draft
+    path: skills/ui_improvement_audit/skill.yaml
+  - skill_id: landing_page_reference_brief
+    pack_id: lazyweb
+    status: draft
+    path: skills/landing_page_reference_brief/skill.yaml
+  - skill_id: screenshot_to_redesign_plan
+    pack_id: lazyweb
+    status: draft
+    path: skills/screenshot_to_redesign_plan/skill.yaml

@@ -1,0 +1,17 @@
+skills:
+  - id: design_research_to_ui_spec
+    version: 0.1.0
+    status: draft
+    path: skills/design_research_to_ui_spec/skill.yaml
+  - id: ui_improvement_audit
+    version: 0.1.0
+    status: draft
+    path: skills/ui_improvement_audit/skill.yaml
+  - id: landing_page_reference_brief
+    version: 0.1.0
+    status: draft
+    path: skills/landing_page_reference_brief/skill.yaml
+  - id: screenshot_to_redesign_plan
+    version: 0.1.0
+    status: draft
+    path: skills/screenshot_to_redesign_plan/skill.yaml

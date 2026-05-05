@@ -1,0 +1,27 @@
+id: lazyweb
+name: Lazyweb MCP Pack
+version: 0.1.0
+provider: Lazyweb
+access_mode: mcp
+write_capability: false
+stores_credentials: false
+purpose: Read-only external UI reference search for design research and pattern comparison.
+capabilities:
+  - Search public UI references and patterns.
+  - Return metadata for provenance recording.
+  - Support evidence gathering for design decisions.
+permissions:
+  - Read-only external UI reference search.
+  - No destructive actions.
+  - No billing authority.
+  - No credential storage in repo.
+  - No raw token commits.
+auth:
+  method: local_operator_managed
+  token_storage: out_of_repo_only
+compatible_skills:
+  - design_research_to_ui_spec
+  - ui_improvement_audit
+  - landing_page_reference_brief
+  - screenshot_to_redesign_plan
+status: draft
