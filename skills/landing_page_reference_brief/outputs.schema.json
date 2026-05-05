@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "landing_page_reference_brief outputs",
+  "type": "object",
+  "required": ["report_md", "landing_page_brief_md", "rts_design_decision_block_yaml"],
+  "properties": {
+    "report_md": {"type": "string"},
+    "landing_page_brief_md": {"type": "string"},
+    "rts_design_decision_block_yaml": {"type": "string"}
+  },
+  "additionalProperties": false
+}

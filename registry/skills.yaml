@@ -1,0 +1,13 @@
+skills:
+  - id: design_research_to_ui_spec
+    version: 0.1.0
+    status: draft
+  - id: ui_improvement_audit
+    version: 0.1.0
+    status: draft
+  - id: landing_page_reference_brief
+    version: 0.1.0
+    status: draft
+  - id: screenshot_to_redesign_plan
+    version: 0.1.0
+    status: draft

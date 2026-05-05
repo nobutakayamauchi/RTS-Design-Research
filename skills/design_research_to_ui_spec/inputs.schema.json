@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "design_research_to_ui_spec inputs",
+  "type": "object",
+  "required": ["project", "screen", "research_goal", "references"],
+  "properties": {
+    "project": {"type": "string"},
+    "screen": {"type": "string"},
+    "research_goal": {"type": "string"},
+    "references": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+  },
+  "additionalProperties": false
+}
