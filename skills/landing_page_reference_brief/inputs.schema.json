@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "landing_page_reference_brief inputs",
+  "type": "object",
+  "required": ["project", "audience", "positioning", "reference_domains"],
+  "properties": {
+    "project": {"type": "string"},
+    "audience": {"type": "string"},
+    "positioning": {"type": "string"},
+    "reference_domains": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+  },
+  "additionalProperties": false
+}

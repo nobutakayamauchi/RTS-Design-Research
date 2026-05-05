@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "screenshot_to_redesign_plan outputs",
+  "type": "object",
+  "required": ["redesign_plan_md", "ui_spec_md", "rts_design_decision_block_yaml"],
+  "properties": {
+    "redesign_plan_md": {"type": "string"},
+    "ui_spec_md": {"type": "string"},
+    "rts_design_decision_block_yaml": {"type": "string"}
+  },
+  "additionalProperties": false
+}

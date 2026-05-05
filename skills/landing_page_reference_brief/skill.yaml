@@ -1,0 +1,18 @@
+id: landing_page_reference_brief
+name: Landing Page Reference Brief
+version: 0.1.0
+description: Research landing page patterns and produce a section-by-section landing page brief.
+inputs:
+  - project
+  - audience
+  - positioning
+  - reference_domains
+outputs:
+  - report_md
+  - landing_page_brief_md
+  - rts_design_decision_block_yaml
+required_packs:
+  - lazyweb
+records_to_rts: true
+failure_modes: skills/landing_page_reference_brief/failure_modes.md
+status: draft

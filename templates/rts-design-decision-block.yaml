@@ -1,0 +1,17 @@
+id: example-id
+type: ui_design_decision
+project: example-project
+screen: example-screen
+created_at: "1970-01-01T00:00:00Z"
+context: ""
+research:
+  sources: []
+  notes: []
+findings: []
+decision: ""
+constraints: []
+assumptions: []
+action: []
+outcome:
+  expected: []
+  observed: []

@@ -1,0 +1,33 @@
+id: rts-dashboard-layout-001
+type: ui_design_decision
+project: RTS
+screen: audit_console_dashboard
+created_at: "2026-05-05T00:00:00Z"
+context: >-
+  Audit reviewers need to reconstruct decision history quickly without navigating across multiple views.
+research:
+  sources:
+    - source: lazyweb
+      reference: placeholder://developer-dashboard-patterns
+  notes:
+    - Left navigation and persistent inspector patterns reduce audit friction.
+findings:
+  - Three-pane layouts improve traceability review throughput.
+  - Timeline-first center regions support chronological analysis.
+decision: >-
+  Use a three-pane operational console layout with left nav, center decision timeline,
+  and right inspector for selected decision details.
+constraints:
+  - Must expose context, assumptions, constraints, action, outcome per decision.
+  - Must include commit-linked evidence when available.
+assumptions:
+  - Primary users are technical reviewers familiar with ledger terminology.
+  - Most sessions involve comparing adjacent decision transitions.
+action:
+  - Produce UI spec and implementation brief for the three-pane dashboard.
+  - Implement timeline selection state synchronized with inspector details.
+outcome:
+  expected:
+    - Faster decision audits.
+    - Lower context-switch overhead.
+  observed: []

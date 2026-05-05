@@ -1,0 +1,15 @@
+.env
+.env.*
+*.token
+*.key
+*.pem
+.lazyweb/
+lazyweb_mcp_token
+node_modules/
+.venv/
+__pycache__/
+.DS_Store
+dist/
+build/
+.cache/
+.next/

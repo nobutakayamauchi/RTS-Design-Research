@@ -1,0 +1,9 @@
+compatibility:
+  - skill: design_research_to_ui_spec
+    packs: [lazyweb]
+  - skill: ui_improvement_audit
+    packs: [lazyweb]
+  - skill: landing_page_reference_brief
+    packs: [lazyweb]
+  - skill: screenshot_to_redesign_plan
+    packs: [lazyweb]
