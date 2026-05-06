@@ -1,0 +1,25 @@
+{
+  "project": "RTS",
+  "screen": "generated_decision_stub",
+  "created_at": "2026-05-06T00:00:00Z",
+  "research_goal": "Convert skill output into a canonical design decision stub.",
+  "reference_queries": [
+    "traceable design decision handoff patterns"
+  ],
+  "provenance_model": {
+    "sources": [
+      {
+        "source_id": "src-generated-flow-001",
+        "source_type": "article",
+        "provider": "example-fixture",
+        "query": "traceable design decision handoff patterns",
+        "retrieved_at": "2026-05-06T00:00:00Z",
+        "reference_url": "na",
+        "screenshot_path": "na",
+        "license_or_usage_note": "Example fixture; no external asset stored.",
+        "confidence": "low",
+        "notes": "Fixture source used to validate generator structure."
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+id: "decision-rts-generated-decision-stub-001"
+type: "design_decision"
+project: "RTS"
+screen: "generated_decision_stub"
+created_at: "2026-05-06T00:00:00Z"
+context: "Convert skill output into a canonical design decision stub."
+research:
+  sources:
+    - source_id: "src-generated-flow-001"
+      source_type: "article"
+      provider: "example-fixture"
+      query: "traceable design decision handoff patterns"
+      retrieved_at: "2026-05-06T00:00:00Z"
+      reference_url: "na"
+      screenshot_path: "na"
+      license_or_usage_note: "Example fixture; no external asset stored."
+      confidence: "low"
+      notes: "Fixture source used to validate generator structure."
+findings:
+  observed_patterns:
+    - "Placeholder observed pattern from reference_queries."
+  anti_patterns:
+    - "Placeholder anti-pattern to validate."
+decision:
+  selected_pattern: "Placeholder selected pattern"
+  rationale: "Generated stub; replace with decision rationale."
+constraints:
+  - "Preserve source provenance fields."
+assumptions:
+  - "Generated values require human review."
+action:
+  outputs:
+    - "report.md"
+    - "ui-spec.md"
+    - "implementation-brief.md"
+    - "rts-design-decision-block.yaml"
+outcome:
+  status: "proposed"
+  expected:
+    - "Decision can be reviewed and refined."
+  observed: []
