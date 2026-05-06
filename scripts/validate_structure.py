@@ -19,12 +19,19 @@ REQUIRED_FILES = [
     "docs/contracts/implementation_brief.md",
     "docs/contracts/rts_design_decision_block.md",
     "docs/architecture/TRACEABILITY_MODEL.md",
+    "docs/architecture/DECISION_FLOW.md",
     "schemas/rts_design_decision_block.schema.json",
     "scripts/validate_structure.py",
+    "scripts/generate_decision_stub.py",
     "docs/examples/rts_landing_page/report.md",
     "docs/examples/rts_landing_page/ui-spec.md",
     "docs/examples/rts_landing_page/implementation-brief.md",
     "docs/examples/rts_landing_page/rts-design-decision-block.yaml",
+]
+
+GENERATED_EXAMPLE_FILES = [
+    "docs/examples/generated/simple_decision_input.json",
+    "docs/examples/generated/rts-design-decision-block.yaml",
 ]
 
 REQUIRED_DIRECTORIES = [
@@ -32,6 +39,7 @@ REQUIRED_DIRECTORIES = [
     "docs/architecture",
     "docs/contracts",
     "docs/examples",
+    "docs/examples/generated",
     "docs/overview",
     "docs/policy",
     "packs",
@@ -251,6 +259,25 @@ def check_example_reports() -> int:
     return checked
 
 
+def check_generated_examples() -> int:
+    checked = 0
+    for item in GENERATED_EXAMPLE_FILES:
+        path = ROOT / item
+        if not path.is_file():
+            fail(f"missing generated example file: {item}")
+        text = read_text(path)
+        if path.suffix in {".yaml", ".yml"} and not text.strip():
+            fail(f"generated YAML is empty: {item}")
+        checked += 1
+
+    generated_yaml = ROOT / "docs" / "examples" / "generated" / "rts-design-decision-block.yaml"
+    text = read_text(generated_yaml)
+    for token in ("design_decision", "source_id", "rts-design-decision-block.yaml"):
+        if token not in text:
+            fail(f"generated decision stub missing {token}: {relative(generated_yaml)}")
+    return checked
+
+
 def check_canonical_skill_schemas() -> int:
     checked = 0
     for skill, required_inputs in CANONICAL_SKILL_INPUT_REQUIRED.items():
@@ -329,6 +356,7 @@ def main() -> None:
         "registry_paths_checked": check_registry_paths(),
         "landing_page_outputs_checked": check_landing_page_outputs(),
         "example_reports_checked": check_example_reports(),
+        "generated_examples_checked": check_generated_examples(),
         "canonical_skill_schemas_checked": check_canonical_skill_schemas(),
         "canonical_decision_schema_checked": check_canonical_decision_schema(),
         "deprecated_terms_checked": check_deprecated_terms(),
