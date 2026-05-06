@@ -1,33 +1,46 @@
-id: rts-dashboard-layout-001
-type: ui_design_decision
-project: RTS
-screen: audit_console_dashboard
+id: "decision-rts-audit-console-dashboard-001"
+type: design_decision
+project: "RTS"
+screen: "audit_console_dashboard"
 created_at: "2026-05-05T00:00:00Z"
-context: >-
-  Audit reviewers need to reconstruct decision history quickly without navigating across multiple views.
+context: "Audit reviewers need to reconstruct decision history quickly without navigating across multiple views."
 research:
   sources:
-    - source: lazyweb
-      reference: placeholder://developer-dashboard-patterns
-  notes:
-    - Left navigation and persistent inspector patterns reduce audit friction.
+    - source_id: "src-dashboard-patterns-001"
+      source_type: "article"
+      provider: "lazyweb"
+      query: "developer dashboard traceability patterns"
+      retrieved_at: "2026-05-05T00:00:00Z"
+      reference_url: "na"
+      screenshot_path: "na"
+      license_or_usage_note: "Example placeholder; replace with source-specific usage notes."
+      confidence: "medium"
+      notes: "Placeholder provenance for dashboard example."
 findings:
-  - Three-pane layouts improve traceability review throughput.
-  - Timeline-first center regions support chronological analysis.
-decision: >-
-  Use a three-pane operational console layout with left nav, center decision timeline,
-  and right inspector for selected decision details.
+  observed_patterns:
+    - "Three-pane layouts improve traceability review throughput."
+    - "Timeline-first center regions support chronological analysis."
+  anti_patterns:
+    - "Decorative hero sections distract from operational review tasks."
+    - "Hidden provenance links slow evidence review."
+decision:
+  selected_pattern: "Three-pane operational console"
+  rationale: "Left navigation, a center decision timeline, and a right inspector keep source evidence close to the selected decision."
 constraints:
-  - Must expose context, assumptions, constraints, action, outcome per decision.
-  - Must include commit-linked evidence when available.
+  - "Must expose context, assumptions, constraints, action, and outcome per decision."
+  - "Must include commit-linked evidence when available."
 assumptions:
-  - Primary users are technical reviewers familiar with ledger terminology.
-  - Most sessions involve comparing adjacent decision transitions.
+  - "Primary users are technical reviewers familiar with ledger terminology."
+  - "Most sessions involve comparing adjacent decision transitions."
 action:
-  - Produce UI spec and implementation brief for the three-pane dashboard.
-  - Implement timeline selection state synchronized with inspector details.
+  outputs:
+    - report.md
+    - ui-spec.md
+    - implementation-brief.md
+    - rts-design-decision-block.yaml
 outcome:
+  status: proposed
   expected:
-    - Faster decision audits.
-    - Lower context-switch overhead.
+    - "Faster decision audits."
+    - "Lower context-switch overhead."
   observed: []

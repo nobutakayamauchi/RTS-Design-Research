@@ -1,12 +1,13 @@
 id: ui_improvement_audit
 name: UI Improvement Audit
 version: 0.1.0
-description: Compare an existing screen against real UI references and produce prioritized improvement recommendations.
+description: Compare an existing screen against UI sources and produce prioritized improvement recommendations.
 inputs:
   - project
   - screen
   - current_ui_snapshot
   - target_outcomes
+  - reference_queries
 outputs:
   - audit_report_md
   - prioritized_recommendations_md

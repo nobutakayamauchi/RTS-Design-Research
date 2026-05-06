@@ -6,7 +6,7 @@ inputs:
   - project
   - audience
   - positioning
-  - reference_domains
+  - reference_queries
 outputs:
   - report_md
   - landing_page_brief_md

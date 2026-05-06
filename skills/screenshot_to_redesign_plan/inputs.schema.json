@@ -2,12 +2,32 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "screenshot_to_redesign_plan inputs",
   "type": "object",
-  "required": ["project", "screen", "screenshot", "target_direction"],
+  "required": [
+    "project",
+    "screen",
+    "screenshot",
+    "target_direction"
+  ],
   "properties": {
-    "project": {"type": "string"},
-    "screen": {"type": "string"},
-    "screenshot": {"type": "string"},
-    "target_direction": {"type": "string"}
+    "project": {
+      "type": "string"
+    },
+    "screen": {
+      "type": "string"
+    },
+    "screenshot": {
+      "type": "string"
+    },
+    "target_direction": {
+      "type": "string"
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    }
   },
   "additionalProperties": false
 }
