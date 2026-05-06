@@ -2,11 +2,25 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "design_research_to_ui_spec outputs",
   "type": "object",
-  "required": ["report_md", "ui_spec_md", "rts_design_decision_block_yaml"],
+  "required": [
+    "report_md",
+    "ui_spec_md",
+    "implementation_brief_md",
+    "rts_design_decision_block_yaml"
+  ],
   "properties": {
-    "report_md": {"type": "string"},
-    "ui_spec_md": {"type": "string"},
-    "rts_design_decision_block_yaml": {"type": "string"}
+    "report_md": {
+      "type": "string"
+    },
+    "ui_spec_md": {
+      "type": "string"
+    },
+    "implementation_brief_md": {
+      "type": "string"
+    },
+    "rts_design_decision_block_yaml": {
+      "type": "string"
+    }
   },
   "additionalProperties": false
 }

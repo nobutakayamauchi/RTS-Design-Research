@@ -7,6 +7,7 @@ inputs:
   - screen
   - screenshot
   - target_direction
+  - constraints
 outputs:
   - redesign_plan_md
   - ui_spec_md

@@ -1,17 +1,41 @@
-id: example-id
-type: ui_design_decision
-project: example-project
-screen: example-screen
-created_at: "1970-01-01T00:00:00Z"
-context: ""
+id: "decision-<project>-<screen>-<nnn>"
+type: design_decision
+project: "<project>"
+screen: "<screen>"
+created_at: "<ISO-8601-date-time>"
+context: "<problem context and scope>"
 research:
-  sources: []
-  notes: []
-findings: []
-decision: ""
-constraints: []
-assumptions: []
-action: []
+  sources:
+    - source_id: "<source-id>"
+      source_type: "<screenshot|article|product-page|design-system>"
+      provider: "<provider>"
+      query: "<retrieval query>"
+      retrieved_at: "<ISO-8601-date-time>"
+      reference_url: "<url-or-na>"
+      screenshot_path: "<path-or-na>"
+      license_or_usage_note: "<usage note>"
+      confidence: "medium"
+      notes: "<analysis notes>"
+findings:
+  observed_patterns:
+    - "<pattern observed from sources>"
+  anti_patterns:
+    - "<pattern to avoid>"
+decision:
+  selected_pattern: "<chosen pattern>"
+  rationale: "<why this pattern>"
+constraints:
+  - "<constraint>"
+assumptions:
+  - "<assumption>"
+action:
+  outputs:
+    - report.md
+    - ui-spec.md
+    - implementation-brief.md
+    - rts-design-decision-block.yaml
 outcome:
-  expected: []
+  status: proposed
+  expected:
+    - "<expected outcome>"
   observed: []

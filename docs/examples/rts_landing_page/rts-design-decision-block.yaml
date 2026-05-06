@@ -1,0 +1,46 @@
+id: "decision-rts-marketing-landing-page-001"
+type: design_decision
+project: "RTS"
+screen: "marketing_landing_page"
+created_at: "2026-05-05T00:00:00Z"
+context: "Technical evaluators need a landing page that explains reconstructable design decisions without relying on vague productivity claims."
+research:
+  sources:
+    - source_id: "src-landing-trust-001"
+      source_type: "article"
+      provider: "lazyweb"
+      query: "developer tool landing page trust patterns"
+      retrieved_at: "2026-05-05T00:00:00Z"
+      reference_url: "na"
+      screenshot_path: "na"
+      license_or_usage_note: "Example placeholder; replace with source-specific usage notes."
+      confidence: "medium"
+      notes: "Placeholder source for trust-building landing page patterns."
+findings:
+  observed_patterns:
+    - "Clear hero promises work best when followed by evidence and workflow proof."
+    - "Product-led sections help technical buyers understand how the system behaves."
+  anti_patterns:
+    - "Vague AI productivity claims reduce trust for audit-oriented products."
+    - "Screenshot-free pages make reconstructability difficult to evaluate."
+decision:
+  selected_pattern: "Evidence-led landing page narrative"
+  rationale: "A hero promise, workflow proof, and provenance-backed evidence cards align the page with RTS traceability goals."
+constraints:
+  - "Claims must map back to source_id provenance records."
+  - "The page must explain traceability before asking for conversion."
+assumptions:
+  - "Primary visitors are technical evaluators comparing audit and decision tooling."
+  - "Visitors need concrete workflow proof before trusting the product position."
+action:
+  outputs:
+    - report.md
+    - ui-spec.md
+    - implementation-brief.md
+    - rts-design-decision-block.yaml
+outcome:
+  status: proposed
+  expected:
+    - "Higher trust in RTS reconstructability claims."
+    - "Clearer evaluation path for technical visitors."
+  observed: []

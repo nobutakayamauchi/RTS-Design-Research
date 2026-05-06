@@ -1,15 +1,17 @@
 id: design_research_to_ui_spec
 name: Design Research to UI Spec
 version: 0.1.0
-description: Use Lazyweb or another UI reference source to convert pattern research into a UI spec and RTS design decision block.
+description: Use Lazyweb or another UI source to convert pattern research into a UI spec and RTS design decision block.
 inputs:
   - project
   - screen
   - research_goal
-  - references
+  - reference_queries
+  - constraints
 outputs:
   - report_md
   - ui_spec_md
+  - implementation_brief_md
   - rts_design_decision_block_yaml
 required_packs:
   - lazyweb
