@@ -46,3 +46,12 @@ Initial integrations are designed around Lazyweb MCP as a **read-only external U
 - `packs/` — draft MCP pack placeholders (starting with Lazyweb)
 - `templates/` — reusable authoring templates
 - `registry/` — compatibility and index metadata
+- `schemas/` — validation schemas for RTS design decision artifacts
+- `scripts/` — lightweight repository validation utilities
+
+## Governance and traceability
+- [Reference asset policy](docs/policy/REFERENCE_ASSET_POLICY.md) defines how external design references may be used.
+- [Provenance model](docs/contracts/provenance_model.md) defines source metadata required for reconstructable decisions.
+- [Traceability model](docs/architecture/TRACEABILITY_MODEL.md) explains how research inputs connect to RTS-compatible decision records.
+- Examples are placeholders unless explicitly marked as sourced.
+- This repository records design decisions, not raw inspiration dumps.
