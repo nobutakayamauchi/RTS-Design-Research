@@ -1,0 +1,23 @@
+id: reference_to_design_md
+name: Reference to DESIGN.md
+version: 0.1.0
+description: Retrieve evidence-backed design references, extract transferable principles, and generate a project DESIGN.md.
+inputs:
+  - project
+  - artifact_type
+  - audience
+  - primary_goal
+  - traits
+  - reference_queries
+  - constraints
+outputs:
+  - reference_set
+  - preference_evidence
+  - transferable_principles
+  - design_md
+  - reference_audit_checklist
+  - rts_design_decision_block_yaml
+required_packs:
+  - lazyweb
+records_to_rts: true
+status: draft
